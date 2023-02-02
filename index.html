@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Home</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/table.css" />
+    <!-- <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="example.css" /> -->
+    <!-- เทสๆ -->
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+      />
+  </head>
+
+  <body>
+     <!-- Header -->
+     <header>
+      <!-- nav -->
+      <div class="nav container">
+          <div class="link-main">
+              <a href="index.html" class="logo">POS</a>
+          </div>
+         
+          <div class="link-all">
+              <a href="Recender.html" class="logo">Dashboard</a>
+          </div>
+
+      </div>
+  </header>
+  <!-- Shop -->
+
+        <!-- <hr></hr> -->
+
+        <div class="table-number">
+          <div class="table-1">
+            <a href="product.html" target="_blank"><img src="p/T1.png"></a>
+          </div>
+          <div class="table-2">
+            <a href="product.html" target="_blank"><img src="p/T2.png"></a>
+          </div>
+          <div class="table-2">
+            <a href="product.html" target="_blank"><img src="p/T3.png"></a>
+          </div>
+          <div class="table-3">
+            <a href="product.html" target="_blank"><img src="p/T4.png"></a>
+          </div>
+          <div class="table-4">
+            <a href="product.html" target="_blank"><img src="p/T5.png"></a>
+          </div>
+          <div class="table-5">
+            <a href="product.html" target="_blank"><img src="p/T6.png"></a>
+          </div>
+          <div class="table-6">
+            <a href="product.html" target="_blank"><img src="p/T7.png"></a>
+          </div>
+          <div class="table-7">
+            <a href="product.html" target="_blank"><img src="p/T8.png"></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>
+  </body>
+
+</html>
